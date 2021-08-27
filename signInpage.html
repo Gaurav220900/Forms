@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signinpage</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(0, 204, 153);
+            margin: 0px;
+            padding: 0px;
+        }
+        .div1 {
+            background-image: linear-gradient(to right, rgb(255, 0, 221) , rgb(0, 89, 255));
+            width: 30%;
+            margin: 200px auto;
+            padding: 10px;
+            background-color: black;
+        }
+        .div2 {
+            padding:10px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        input[type="text"],input[type="password"] {
+            padding: 15px 20px;
+            border: 3px solid blue;
+            border-radius: 25px;
+            outline: none;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        input[type="submit"]{
+            width: 30%;
+            padding: 15px 20px;
+            border : 3px solid green;
+            border-radius: 25px;
+            outline: none;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        input[type="submit"]:hover{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1" id="div10">
+    <div class="div2" id="inp1">
+        <form method="POST" action="">
+        <h1>LOGIN</h1>
+        <br>
+        <input type="text" name="uname" placeholder="Username" id="name" >
+        <br>
+        <br>
+        <input type="password" name="pass" placeholder="Password">
+        <br>
+        <br>
+        <br>
+        <input type="submit" name="submit" onclick="comp()">
+        </form>
+    </div>
+    </div>
+    <h1 id="inp2" style="text-align: center; color: white;"></h1>
+    <script>
+        function comp(){
+            document.getElementById("inp1").style.display="none";
+            document.getElementById("div10").style.display="none";
+            var k=document.getElementById("name").value;
+            document.getElementById("inp2").innerHTML="Welcome Back " + k;
+        }
+    </script>
+</body>
+</html>
+
+<?php
+
+include 'connection.php';
+
+

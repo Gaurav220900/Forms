@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>student-form></title>
+<meta name="viewport" content="width=device-width" initial-scale="1">
+<style>
+body {        background-color:#9966FF;
+	font-size:20px;
+	font-family:verdana;
+	opacity:0.6;
+	
+}
+h1 { font-size:200%;
+	text-align:center;
+	margin-top:30px;
+}
+.container { background-color:darkblue;
+	  padding:30px;
+	margin:20px auto;
+	color:white;
+	width:700px;
+border-radius:4px;
+line-height:1.3;
+opacity:1.o;
+}
+input[type="text"], input[type="number"], input[type="password"], select, textarea {
+width:100%;
+box-sizing:border-box;
+padding:15px;
+margin-top:5px;
+border-radius:4px;
+border:none;
+background-color:white;
+}
+.submitbtn {
+background-color:green;
+width:100%;
+box-sizing:border-box;
+padding:15px;
+margin-top:30px;
+text-align:center;
+font-size:110%;
+border:none;
+}
+.submitbtn:hover {
+background-color:#888;
+}
+</style>
+</head>
+<body>
+<center><h1 style="color:red">Student-Form</h1></center>
+<center><p style="text-align:center; font-style:italic">Thank you for taking the time to fill the Form</p></center>
+<form class="container">
+<div>
+<label for="name">Name</label><br>
+<input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+<label for="class">Class</label>
+<label for="roll no" style="position:relative; left:340px" min="1" max="12">Roll no</label><br>
+<input type="number" id="class" placeholder="Enter your class" style="width:300px"required>
+<input type="number" id="roll no" placeholder="Enter your roll" style="width:300px; position:relative; left:92px"" required><br>
+<br>
+<label for="email">Email</label><br>
+<input type="text" id="email" placeholder="Enter your email" required><br><br>
+
+<label for="Password">Password</label><br>
+<input type="password" id="pass" placeholder="Enter your password" required><br><br>
+
+<label for="Password">Password</label><br>
+<input type="password" id="pass" placeholder="confirm your password" required><br><br>
+
+
+<label for="stuyear">In which year you are currently?</label><br>
+<input type="radio" id="1year"  name="year" required>
+<label for="year">1st year</label><br>
+<input type="radio" id="2year" name="year">
+<label for="2year">2nd year</label><br>
+<input type="radio" id="3year" name="year">
+<label for="3year">3rd year</label><br>
+<input type="radio" id="4year" name="year">
+<label for="4year">4th year</label><br><br>
+
+<label for="gender">Gender:</label><br>
+<input type="radio" id="gender" name="Male" required>
+<label for="male">Male</label><br>
+<input type="radio" id="gender"  name="female">
+<label for="female">Female</label><br>
+<input type="radio" id="gender"  name="others">
+<label for="others">Others</label>
+ <br><br>
+
+
+
+<label for="stream">Choose your stream:</label><br>
+<input type="checkbox" id="op1">
+<label id="op1">Computer science</label><br>
+<input type="checkbox" id="op2">
+<label for="op2">Information Technology</label><br>
+<input type="checkbox" id="op3">
+<label for="op3">Electrical engineering</label><br>
+<input type="checkbox" id="op4">
+<label for="op4">Mechanical engineering</label><br>
+<input type="checkbox" id="op5">
+<label for="op5">Chemical engineering</label><br>
+<input type="checkbox" id="op6">
+<label for="op6">Civil engineering</label><br><br>
+
+<p>Any comments or suggestions</p>
+<textarea name="feedback" style="height:150px" required>
+</textarea><br>
+<input type="submit" class="submitbtn">
+</div>
+</forms>
+</body>
+</html>
+
+
+
+
